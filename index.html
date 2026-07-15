@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Car & Bike Oil Change & Mechanical Services. We provide genuine engine oils, filters, and car care products.">
+    <title>BUTT OIL STORE | Professional Maintenance</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                <img src="logo.jpg" alt="Logo" width="40" height="40" class="rounded-circle brand-logo"> BUTT OIL STORE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    
+                    <li class="nav-item ms-lg-3 d-flex align-items-center gap-3">
+                        <button class="btn btn-icon search-btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                        <button class="btn btn-icon theme-toggle" id="themeToggleBtn">
+                            <i class="fa-solid fa-moon dark-icon"></i>
+                            <i class="fa-solid fa-sun light-icon d-none"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Modal -->
+    <div class="modal fade glass-modal" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search products, services...">
+                        <button class="btn btn-primary" type="button"><i class="fa-solid fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="display-4 fw-bolder text-white mb-4">Professional Car & Bike Oil Change & Mechanical Services</h1>
+                    <p class="lead text-white-50 mb-5 fs-4">Premium engine oils, filters, car care products, and expert mechanical services under one roof.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a class="btn btn-primary btn-lg rounded-pill px-4 py-3" href="#products">Explore Products</a>
+                        <a class="btn btn-outline-light btn-lg rounded-pill px-4 py-3" href="#services">Book Service</a>
+                        <a class="btn btn-link text-white text-decoration-none btn-lg px-4 py-3" href="#about">About Us <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-6">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="image-wrapper glass-card p-2 rounded-4">
+                        <!-- Placeholder for workshop image -->
+                        <div class="placeholder-img rounded-4 d-flex align-items-center justify-content-center bg-light" style="height: 400px;">
+                            <i class="fa-solid fa-car-side fa-4x text-muted"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="section-title mb-4">Premium Maintenance for Your Vehicles</h2>
+                    <p class="text-muted fs-5 mb-4">We provide premium quality lubricants, filters, mechanical repairs, and comprehensive vehicle maintenance for all types of cars and bikes. Our certified mechanics ensure your vehicle performs at its absolute best.</p>
+                    <ul class="list-unstyled feature-list">
+                        <li class="mb-3"><i class="fa-solid fa-check-circle text-primary me-2"></i> Authorized dealer for top oil brands</li>
+                        <li class="mb-3"><i class="fa-solid fa-check-circle text-primary me-2"></i> State-of-the-art diagnostic equipment</li>
+                        <li class="mb-3"><i class="fa-solid fa-check-circle text-primary me-2"></i> 100% Genuine spare parts and filters</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-6 bg-alt">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Our Premium Products</h2>
+                <p class="text-muted">Explore our wide range of genuine oils, filters, and car care accessories.</p>
+            </div>
+
+            <!-- Product Categories Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-5 custom-tabs" id="productTabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="car-oils-tab" data-bs-toggle="tab" data-bs-target="#car-oils" type="button" role="tab">Car Oils</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bike-oils-tab" data-bs-toggle="tab" data-bs-target="#bike-oils" type="button" role="tab">Bike Oils</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="filters-tab" data-bs-toggle="tab" data-bs-target="#filters" type="button" role="tab">Filters</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="car-care-tab" data-bs-toggle="tab" data-bs-target="#car-care" type="button" role="tab">Car Care</button>
+                </li>
+            </ul>
+
+            <!-- Brand Filter for Oils (Visible on Car/Bike tabs) -->
+            <div class="brand-filters text-center mb-4 d-flex flex-wrap justify-content-center gap-2" id="brandFilters" data-aos="fade-up" data-aos-delay="200">
+                <button class="btn btn-sm btn-outline-secondary active filter-btn" data-filter="all">All Brands</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="zic">ZIC</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="kor">KOR</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="idemitsu">Idemitsu</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="toyota">Toyota</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="honda">Honda</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="castrol">Castrol</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="mobil">Mobil</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="liqui-moly">Liqui Moly</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="total">Total</button>
+                <button class="btn btn-sm btn-outline-secondary filter-btn" data-filter="shell">Shell</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="productTabsContent">
+                
+                <!-- Car Oils -->
+                <div class="tab-pane fade show active" id="car-oils" role="tabpanel">
+                    <div class="row g-4 product-grid">
+                        <!-- Dynamic content populated by JS to show various grades per brand -->
+                    </div>
+                </div>
+
+                <!-- Bike Oils -->
+                <div class="tab-pane fade" id="bike-oils" role="tabpanel">
+                    <div class="row g-4 product-grid-bike">
+                        <!-- Dynamic content populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <div class="tab-pane fade" id="filters" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-6" data-aos="zoom-in">
+                            <div class="product-card glass-card">
+                                <div class="product-img bg-light p-2">
+                                    <img src="https://placehold.co/400x400/eeeeee/000000?text=Oil+Filter" alt="Oil Filter" class="img-fluid rounded" style="object-fit: cover; height: 100%; width: 100%;">
+                                </div>
+                                <div class="product-info">
+                                    <h4>Premium Oil Filters</h4>
+                                    <p>Available for all major car and bike models.</p>
+                                    <div class="product-actions">
+                                        <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                        <button class="btn btn-sm btn-primary"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="product-card glass-card">
+                                <div class="product-img bg-light p-2">
+                                    <img src="https://placehold.co/400x400/eeeeee/000000?text=Air+Filter" alt="Air Filter" class="img-fluid rounded" style="object-fit: cover; height: 100%; width: 100%;">
+                                </div>
+                                <div class="product-info">
+                                    <h4>High-Flow Air Filters</h4>
+                                    <p>Improve engine performance and fuel efficiency.</p>
+                                    <div class="product-actions">
+                                        <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                        <button class="btn btn-sm btn-primary"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="product-card glass-card">
+                                <div class="product-img bg-light p-2">
+                                    <img src="https://placehold.co/400x400/eeeeee/000000?text=AC+Filter" alt="AC Filter" class="img-fluid rounded" style="object-fit: cover; height: 100%; width: 100%;">
+                                </div>
+                                <div class="product-info">
+                                    <h4>AC Cabin Filters</h4>
+                                    <p>Breathe clean air inside your vehicle.</p>
+                                    <div class="product-actions">
+                                        <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                        <button class="btn btn-sm btn-primary"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Care -->
+                <div class="tab-pane fade" id="car-care" role="tabpanel">
+                    <div class="row g-4" id="carCareGrid">
+                        <!-- Generated by JS -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-6">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Expert Services</h2>
+                <p class="text-muted">Comprehensive care for your vehicle's health and longevity.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Oil Change -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-card glass-card h-100">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-oil-can"></i>
+                        </div>
+                        <h3>Oil Change</h3>
+                        <p>We use state-of-the-art equipment to ensure a clean and swift oil replacement.</p>
+                        <div class="service-highlight text-primary fw-bold mb-3">
+                            <i class="fa-solid fa-check"></i> Free Oil Changing Facility
+                        </div>
+                        <button class="btn btn-outline-primary w-100">Book Now</button>
+                    </div>
+                </div>
+                
+                <!-- Mechanical Services -->
+                <div class="col-lg-8 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card glass-card h-100">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <h3>Mechanical Services</h3>
+                        <div class="row mt-3">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled service-list">
+                                    <li><i class="fa-solid fa-caret-right text-primary me-2"></i> Engine Tuning</li>
+                                    <li><i class="fa-solid fa-caret-right text-primary me-2"></i> Complete Engine Repair</li>
+                                    <li><i class="fa-solid fa-caret-right text-primary me-2"></i> Suspension Work</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled service-list">
+                                    <li><i class="fa-solid fa-caret-right text-primary me-2"></i> Brake Service</li>
+                                    <li><i class="fa-solid fa-caret-right text-primary me-2"></i> General Maintenance</li>
+                                    <li><i class="fa-solid fa-caret-right text-primary me-2"></i> Vehicle Inspection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Hampers Promo Section -->
+    <section class="gift-section py-5 text-white position-relative overflow-hidden">
+        <div class="gift-bg-overlay"></div>
+        <div class="container position-relative z-1 text-center" data-aos="zoom-in">
+            <i class="fa-solid fa-gift fa-4x text-warning mb-3"></i>
+            <h2 class="display-5 fw-bold mb-3">Special Gift Hampers!</h2>
+            <p class="fs-4 mb-0">🎁 Receive exclusive gift hampers with selected services and promotions.</p>
+            <p class="fs-6 mt-2 text-white-50">Ask our staff about current promotions when you visit.</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-6 bg-alt">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="text-muted">We go above and beyond to deliver the best automotive care.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="50">
+                    <div class="feature-card glass-card">
+                        <i class="fa-solid fa-medal text-warning"></i>
+                        <h5>Premium Oils</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card glass-card">
+                        <i class="fa-solid fa-check-double text-success"></i>
+                        <h5>Genuine Filters</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="feature-card glass-card">
+                        <i class="fa-solid fa-user-gear text-primary"></i>
+                        <h5>Certified Mechanics</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card glass-card">
+                        <i class="fa-solid fa-tags text-danger"></i>
+                        <h5>Affordable Prices</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="250">
+                    <div class="feature-card glass-card">
+                        <i class="fa-solid fa-microchip text-info"></i>
+                        <h5>Modern Equipment</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card glass-card">
+                        <i class="fa-solid fa-hand-holding-droplet text-primary"></i>
+                        <h5>Free Oil Change</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="350">
+                    <div class="feature-card glass-card">
+                        <i class="fa-solid fa-heart text-danger"></i>
+                        <h5>Customer Satisfaction</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-6">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Our Work Gallery</h2>
+                <p class="text-muted">A glimpse into our workshop and the vehicles we care for.</p>
+            </div>
+            
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder bg-secondary d-flex align-items-center justify-content-center text-white" style="height: 250px;">
+                            <i class="fa-solid fa-warehouse fa-3x"></i>
+                            <span class="d-block mt-2">Workshop</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder bg-dark d-flex align-items-center justify-content-center text-white" style="height: 250px;">
+                            <i class="fa-solid fa-bottle-droplet fa-3x"></i>
+                            <span class="d-block mt-2">Oil Products</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder bg-secondary d-flex align-items-center justify-content-center text-white" style="height: 250px;">
+                            <i class="fa-solid fa-gears fa-3x"></i>
+                            <span class="d-block mt-2">Mechanical Work</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder bg-dark d-flex align-items-center justify-content-center text-white" style="height: 300px;">
+                            <i class="fa-solid fa-car fa-3x"></i>
+                            <span class="d-block mt-2">Customer Cars</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-item">
+                        <div class="gallery-placeholder bg-secondary d-flex align-items-center justify-content-center text-white" style="height: 300px;">
+                            <i class="fa-solid fa-motorcycle fa-3x"></i>
+                            <span class="d-block mt-2">Bike Services</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-6 bg-alt">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="testimonial-card glass-card">
+                        <div class="stars mb-3 text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Exceptional service! They used genuine Toyota oil for my car and the free oil change facility is very convenient. Highly recommended."</p>
+                        <div class="customer-info d-flex align-items-center mt-4">
+                            <div class="avatar bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px;">A</div>
+                            <div>
+                                <h6 class="mb-0">Ali Raza</h6>
+                                <small class="text-muted">Car Owner</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card glass-card">
+                        <div class="stars mb-3 text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Got my bike's tuning and oil change done here. The mechanics are very professional and they have a great range of authentic Liqui Moly oils."</p>
+                        <div class="customer-info d-flex align-items-center mt-4">
+                            <div class="avatar bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px;">U</div>
+                            <div>
+                                <h6 class="mb-0">Usman Khan</h6>
+                                <small class="text-muted">Bike Enthusiast</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card glass-card">
+                        <div class="stars mb-3 text-warning">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Very transparent with their mechanical services. They diagnosed my suspension issue quickly and fixed it at an affordable price."</p>
+                        <div class="customer-info d-flex align-items-center mt-4">
+                            <div class="avatar bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px;">S</div>
+                            <div>
+                                <h6 class="mb-0">Saad Ahmad</h6>
+                                <small class="text-muted">Regular Customer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer pt-6 pb-3">
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <h3 class="footer-brand mb-4 d-flex align-items-center gap-2">
+                        <img src="logo.jpg" alt="Logo" width="40" height="40" class="rounded-circle brand-logo">
+                        BUTT OIL STORE
+                    </h3>
+                    <p class="text-muted">Your trusted destination for premium engine oils, genuine filters, and expert mechanical services.</p>
+                    <div class="contact-info mt-4">
+                        <p class="mb-2"><i class="fa-solid fa-user-tie text-primary me-2"></i> <strong>CEO:</strong> Muhammad Waqas Ahmed Butt</p>
+                        <p class="mb-2"><i class="fa-solid fa-phone text-primary me-2"></i> <a href="tel:+923004258629" class="text-decoration-none">+92 300 4258629</a></p>
+                        <p class="mb-2"><i class="fa-solid fa-location-dot text-primary me-2"></i> 308-Ferozepur Road, New Garden Town, Lahore, Pakistan</p>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="mb-4">Quick Links</h5>
+                            <ul class="list-unstyled footer-links">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#products">Products</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="mb-4">Business Hours</h5>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-2">Mon-Sat: 9AM - 8PM</li>
+                                <li class="mb-2">Sunday: 10AM - 5PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 rounded overflow-hidden shadow-sm" style="height: 200px;">
+                        <!-- Google Maps Embed -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.37877663242!2d74.32551401514936!3d31.513750881371755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045bfd3d2c3b%3A0x6b44a30e8c783db!2sFerozepur%20Rd%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1689000000000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="mb-4">Send Us a Message</h5>
+                    <form class="contact-form glass-card p-4 rounded-4" id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-top border-secondary pt-3 text-center text-muted">
+                <p class="mb-0">&copy; <span id="currentYear"></span> BUTT OIL STORE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top -->
+    <button id="scrollTopBtn" class="btn btn-primary rounded-circle"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
